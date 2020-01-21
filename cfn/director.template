@@ -373,7 +373,7 @@ Resources:
         VpcId:                       !Ref VpcId
         ContainerCpu:                "1024"
         ContainerMemory:             "2GB"
-        ContainerImage:              "singlestone/hygieia-api:0.1.0"
+        ContainerImage:              "hygieiadoc/api"
         ContainerPort:               !Ref ApiPort
         ContainerSG:                 !GetAtt SecurityStack.Outputs.ContainerSG
         LoadBalancerSG:              !GetAtt SecurityStack.Outputs.ContainerSG
@@ -508,7 +508,7 @@ Resources:
         VpcId:                       !Ref VpcId
         ContainerCpu:                "256"
         ContainerMemory:             "1GB"
-        ContainerImage:              "singlestone/hygieia-sonarqube-collector:0.1.0"
+        ContainerImage:              "hygieiadoc/sonarcodequalitycollector"
         ContainerPort:               "8080"
         ContainerSG:                 !GetAtt SecurityStack.Outputs.ContainerSG
         LoadBalancerSG:              !GetAtt SecurityStack.Outputs.ContainerSG
@@ -596,7 +596,7 @@ Resources:
         VpcId:                       !Ref VpcId
         ContainerCpu:                "256"
         ContainerMemory:             "1GB"
-        ContainerImage:              "singlestone/hygieia-github-collector:0.1.0"
+        ContainerImage:              "hygieiadoc/githubscmcollector"
         ContainerPort:               "8080"
         ContainerSG:                 !GetAtt SecurityStack.Outputs.ContainerSG
         LoadBalancerSG:              !GetAtt SecurityStack.Outputs.ContainerSG
@@ -673,7 +673,7 @@ Resources:
         VpcId:                       !Ref VpcId
         ContainerCpu:                "256"
         ContainerMemory:             "1GB"
-        ContainerImage:              "singlestone/hygieia-jira-collector:0.1.0"
+        ContainerImage:              "hygieiadoc/jirafeaturecollector"
         ContainerPort:               "8080"
         ContainerSG:                 !GetAtt SecurityStack.Outputs.ContainerSG
         LoadBalancerSG:              !GetAtt SecurityStack.Outputs.ContainerSG
