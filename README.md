@@ -7,7 +7,7 @@ This repo is created and supported by [SingleStone](https://www.singlestoneconsu
 ## Prerequisites
 Before you start you will need the following:
 1. A computer with a Bash shell installed
-1. A [Git client](https://git-scm.com/downloads) is helpful if you want clone this repo, but is not required.
+1. A [Git client](https://git-scm.com/downloads) is helpful if you want to clone this repo, but is not required.
 
 For AWS you will need:
 1. An [AWS Account](https://aws.amazon.com/account/)
